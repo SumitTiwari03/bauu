@@ -10,6 +10,7 @@ import Home from './components/Home.jsx';
 import TodoHeading from './components/Todo/TodoHeading.jsx';
 
 function App() {
+  
   return (
     <>
     <NavBar></NavBar>

@@ -10,11 +10,6 @@ img {
   border-radius: 15px;
   float: right;
 }
-img :hover{
-  height: 15em;
-  width: 5em;
-  border-radius: 5em;
-}
 
 header {
   padding: 0;
@@ -99,4 +94,3 @@ header nav .right ul li a {
     height: 3em;
   }
 }
-

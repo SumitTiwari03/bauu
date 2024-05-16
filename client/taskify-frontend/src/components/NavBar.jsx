@@ -32,7 +32,7 @@ const Headers = () => {
                 <nav>
                     <div className="left">
                         <NavLink to="/todo">
-                            <img className='profile' src='../Taskify.jpg' alt='Img not Found' style={{ height: "4em" }}  ></img>
+                            <img src='../Taskify.jpg' alt='Img not Found' style={{ height: "4em" }}  ></img>
                         </NavLink>
 
                     </div>
@@ -42,11 +42,11 @@ const Headers = () => {
                             {
                                 Object?.keys(userdata)?.length > 0 ? (
                                     <>
-                                
+                               
                                         
                                         <li>
                                             <NavLink to="/dashboard">
-                                                Todo
+                                                Dashboard
                                             </NavLink>
                                         </li>
                                         
