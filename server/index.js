@@ -14,7 +14,7 @@ const clientsecret = process.env.CLIENTSECRET;
 
 
 app.use(cors({
-    origin:"https://taskify-web-app-frontend.vercel.app",
+    origin:"https://bauu.vercel.app",
     methods:"GET,POST,PUT,DELETE",
     credentials:true
 }));
@@ -73,8 +73,8 @@ passport.deserializeUser((user,done)=>{
 app.get("/auth/google",passport.authenticate("google",{scope:["profile","email"]}));
 
 app.get("/auth/google/callback",passport.authenticate("google",{
-    successRedirect:"https://taskify-web-app-frontend.vercel.app/dashboard",
-    failureRedirect:"https://taskify-web-app-frontend.vercel.app/login"
+    successRedirect:"https://bauu.vercel.app/dashboard",
+    failureRedirect:"https://bauu.vercel.app/login"
 }))
 
 app.get('/',(req,res)=>
@@ -93,7 +93,7 @@ app.get("/login/sucess",async(req,res)=>{
 app.get("/logout",(req,res,next)=>{
     req.logout(function(err){
         if(err){return next(err)}
-        res.redirect("https://taskify-web-app-frontend.vercel.app");
+        res.redirect("https://bauu.vercel.app");
     })
 })
 
