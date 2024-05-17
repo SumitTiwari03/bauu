@@ -10,7 +10,7 @@ const Headers = () => {
 
     const getUser = async () => {
         try {
-            const response = await axios.get("http://localhost:1000/login/sucess", { withCredentials: true });
+            const response = await axios.get("https://taskify-backend-q6wbsdjxk-niranjan-shuklas-projects.vercel.app/login/sucess", { withCredentials: true });
 
             setUserdata(response.data.user)
         } catch (error) {
@@ -20,7 +20,7 @@ const Headers = () => {
 
     // logoout
     const logout = () => {
-        window.open("http://localhost:1000/logout", "_self")
+        window.open("https://taskify-backend-q6wbsdjxk-niranjan-shuklas-projects.vercel.app/logout", "_self")
     }
 
     useEffect(() => {
@@ -31,9 +31,9 @@ const Headers = () => {
             <header>
                 <nav>
                     <div className="left">
-                        <NavLink to="/todo">
+                        
                             <img src='../Taskify.jpg' alt='Img not Found' style={{ height: "4em" }}  ></img>
-                        </NavLink>
+                        
 
                     </div>
                     <div className="right">
@@ -42,23 +42,21 @@ const Headers = () => {
                             {
                                 Object?.keys(userdata)?.length > 0 ? (
                                     <>
-                               
-                                        
+                                        <li>
+                                <NavLink to="/todo">
+                                    Home
+                                </NavLink>
+                            </li>
                                         <li>
                                             <NavLink to="/dashboard">
-                                                Dashboard
+                                                Profile
                                             </NavLink>
                                         </li>
                                         
-                                        <li style={{ color: "white", fontWeight: "bold" }}>{userdata?.displayName}</li>
-                                        <li>
-                                            <img src={userdata?.image} style={{ width: "50px", borderRadius: "50%" }} alt="" />
-                                        </li>
+                                        
                                         <li onClick={logout}>Logout</li>
                                     </>
-                                ) : <li>
-                                  
-                                </li>
+                                ) : <p></p>
                             }
 
 

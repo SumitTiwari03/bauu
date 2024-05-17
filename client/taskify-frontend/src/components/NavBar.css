@@ -36,10 +36,12 @@ header nav .right ul {
   align-items: center;
   list-style: none;
 }
-header nav ul li:hover{
+header nav  ul li:hover{
 background-color:black;
 color:white;
 border: 1px solid black;
+
+
 }
 
 header nav .right ul li {
@@ -47,10 +49,10 @@ header nav .right ul li {
   text-transform: capitalize;
   color: white;
   cursor: pointer;
+ 
   padding: 5px;
   margin-left: 5px;
 }
-
 header nav .right ul li a {
   text-decoration: none;
   color: white;
@@ -59,38 +61,37 @@ header nav .right ul li a {
 /* Responsive styles */
 @media (max-width: 768px) {
   header nav {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   header nav .right ul {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   header nav .right ul li {
-    margin-left: 0;
-    margin-bottom: 0.5em;
-    padding: 0.5em;
+      margin-left: 0;
+      margin-bottom: 0.5em;
   }
 
   img {
-    width: 40px;
+      width: 40px;
   }
 }
 
 @media (max-width: 480px) {
   header {
-    height: auto;
-    padding: 1em;
+      height: auto;
+      padding: 1em;
   }
 
   header nav {
-    flex-direction: column;
-    align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
   }
 
   .left img {
-    height: 3em;
+      height: 3em;
   }
 }

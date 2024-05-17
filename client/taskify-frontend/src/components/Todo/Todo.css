@@ -141,4 +141,9 @@ h1 {
   }
 }
 
-
+@media (min-width: 992px) {
+  /* Large devices (laptops/desktops, 992px and up) */
+  .todo-input-item {
+      width: 30%;
+  }
+}
