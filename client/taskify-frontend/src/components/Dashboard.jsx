@@ -5,8 +5,6 @@ import './Dashboard.css'; // Ensure this file has relevant styles
 const Dashboard = () => {
     const [userdata, setUserdata] = useState({});
     console.log("response", userdata)
-
-
     const getUser = async () => {
         try {
             const response = await axios.get("https://taskify-beige-six.vercel.app/login/sucess", { withCredentials: true });
