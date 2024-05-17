@@ -2,12 +2,9 @@ import React from 'react'
 import './Login.css';
 function Login() {
 
-
-
     const loginwithgoogle = ()=>{
         window.open("https://taskify-beige-six.vercel.app/auth/google/callback","_self")
     }
-
   return (
     <>
     <section className="vh-85">
