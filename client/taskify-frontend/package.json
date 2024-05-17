@@ -19,7 +19,6 @@
     "web-vitals": "^2.1.4",
     "webpack": "^4.42.0"
   },
-
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
