@@ -10,7 +10,7 @@ const Headers = () => {
 
     const getUser = async () => {
         try {
-            const response = await axios.get("https://taskify-backend-q6wbsdjxk-niranjan-shuklas-projects.vercel.app/login/sucess", { withCredentials: true });
+            const response = await axios.get("https://taskify-backen.vercel.app/login/sucess", { withCredentials: true });
 
             setUserdata(response.data.user)
         } catch (error) {
@@ -20,7 +20,7 @@ const Headers = () => {
 
     // logoout
     const logout = () => {
-        window.open("https://taskify-backend-q6wbsdjxk-niranjan-shuklas-projects.vercel.app/logout", "_self")
+        window.open("https://taskify-backen.vercel.app/logout", "_self")
     }
 
     useEffect(() => {
